@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-areas:"header header header"
+                        "slider slider slider"
+                        "menu main main"
+                        "footer footer footer";
+    grid-template-rows: 70px auto 1fr 60px;
+    grid-template-columns: 1fr minmax(0, 960px) 1fr;
+    height: 100vh;
+    gap: 5px;
+}
+
+header,
+section,
+aside,
+main,
+footer{
+    background: wheat;
+}
+
+header{
+    grid-area: header;
+}
+section{
+    grid-area: slider;
+}
+aside{
+    grid-area: menu;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+header{
+    display: grid;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    background: rgb(201, 193, 161);
+}
+
+#logo{
+    display: grid;
+    height: 85%;
+    background-image: url("../images/html.png");
+    background-size: 88%;
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin: 5px;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 2fr 8fr 3fr;
+    align-items: center;
+}
+
+header ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 1.3em;
+    height: 100%;
+}
+
+header li{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    column-gap: 5px;
+    /*background: aqua;*/
+}
+
+nav p>a{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header li:hover{
+    background: gray;
+}
+
+header a:hover{
+    background: grey;
+}
+
+header li>a{
+    color: black;
+    text-transform: uppercase;
+}
+
+nav p>a:link{
+    color: yellow;
+}
+
+#slider li{
+    display: none;
+}
+
+#slider li.active{
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
