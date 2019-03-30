@@ -1,0 +1,174 @@
+/*
+#main{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: #eee;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#main2 {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background: #eee;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#main2 {
+    display: none;
+}
+
+#main2:target {
+    display: block;
+    position: relative
+}
+
+*/
+
+/*
+#main p {
+    display: none;
+}
+
+#main:target p {
+    display: block;
+}
+
+#main:target+#click {
+    display: none;
+}
+
+#main:target~#back {
+    display: block;
+}
+
+#back {
+    display: none;
+    margin-left: 311px;
+}*/
+form{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    /*border-radius: 10px;*/
+    height: 490px;
+    width: 500px;
+    background: green;
+}
+
+#b_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 5px 5px 33%;
+    width: 35%;
+}
+
+.column-checkbox{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /*border-radius: 10px;*/
+    height: 460px;
+    width: 500px;
+}
+
+.f_row{
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
+p{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    height: 100%;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    background: ghostwhite;
+    margin: 0;
+    /*padding-left: 10px;*/
+    /*border-radius: 10px;*/
+}
+
+.checked>p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.checked{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.width{
+    width: 20%;
+    /*height: 35%;*/
+    padding-left: 10px;
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background: ghostwhite;
+    margin: 0;
+    padding: 0;
+    /*border-radius: 10px;*/
+}
+
+textarea{
+    display: flex;
+    resize: none;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 0;
+}
+
+input{
+    margin-left: 10px;
+    font-size: 1.3em;
+}
