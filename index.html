@@ -2,39 +2,138 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>Информационный портал БЦ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
 </head>
 <body>
     <header>
-    <nav>
-        <a id="logo" href="index.html"></a>
-        <ul>
-            <li><a href="#">Инженерия</a></li>
-            <li><a href="#">Отдел ИТ</a></li>
-            <li><a href="#">Ресепшен</a></li>
-            <li><a href="#">Управляющий</a></li>
-            <li><a href="#adr">Контакты</a></li>
-        </ul>
-        <p>
-            <a href="#">Вход в личный кабинет</a>
-            <a href="#">Регистрация</a>
-        </p>
-    </nav>
+        <a id="Logo" href="index.html"><img src="images/logoyazilim.png" alt="Информационный портал"></a>
+        <div>
+            <a class="active" href="login.html">Вход в личный кабинет</a>
+            <a class="active" href="signup.html">Регистрация</a>
+        </div>
     </header>
-    <section id="slider">
-        <ul>
-            <li class="active"><img src="images/10.jpg" alt="Информационный портал"></li>
-            <li><img src="#" alt="Информационный портал2"></li>
-            <li><img src="#" alt="Информационный портал3"></li>
-        </ul>
+    <section class="slider">Информационный портал БЦ</section>
+    <main>
+        <section class="card_bc"><!--Основные блоки-->
+            <!--Главное меню навигации-->
+                <div id="block1" class="block1">
+                    <div class="row">
+                            <a id="b1_uk" class="uk b1_uk" href="#block2">Управляющая компания</a>
+                            <a id="b1_na" class="uk b1_na" href="#">Наши арендаторы</a>
+                    </div>
+                    <div class="row">
+                            <a id="b1_vak" class="uk b1_vak" href="#">Вакансии</a>
+                            <a id="b1_soic" class="uk b1_soic" href="#">Соискатель</a>
+                    </div>
+                </div>
+            <!--Управляющая компания-->
+                <div id="block2" class="block2">
+                    <div id="row-2" class="row">
+                        <a id="b2_inzh" class="uk" href="#block3">Инженерия</a>
+                        <a id="b2_it" class="uk" href="#block4">Отдел IT</a>
+                    </div>
+                    <div id="row-3" class="row">
+                        <a id="b2_upr" class="uk" href="#block5">Управляющий</a>
+                        <a id="b2_reseption" class="uk" href="#">Ресепшен</a>
+                    </div>
+                </div>
+            <!--Инженерия-->
+                <div id="block3" class="block3">
+                    <div class="row">
+                        <a id="b3_zlamp" class="uk" href="#">Замена ламп</a>
+                        <a id="b3_vent" class="uk" href="#">Вентиляция</a>
+                    </div>
+                    <div class="row">
+                        <a id="b3_zasor" class="uk" href="#">Засор</a>
+                        <a id="b3_monrab" class="uk" href="#">Монтажные работы</a>
+                    </div>
+                </div>
+            <!--Отдел IT-->
+                <div id="block4" class="block4">
+                    <div class="row">
+                        <a id="b4_newcard" class="uk" href="#block4-1">Оформить новую карту</a>
+                        <a id="b4_rename" class="uk" href="#">Переименовать карту</a>
+                    </div>
+                    <div class="row">
+                        <a id="b4_opp" class="uk" href="Report_passages.html">Учет рабочего времени</a>
+                        <a id="b4_another" class="uk" href="#">Другое</a>
+                    </div>
+                </div>
+            <!--Форма для заполнения на карту-->
+            <form id="block4-1" action="#" method="post">
+                <h1 style="text-align: center">Карта доступа</h1>
+                <div class="column-checkbox">
+                    <div class="f_row">
+                        <p class="width"><label for="last">Фамилия:</label></p>
+                        <p><input id="last" type="text" placeholder="Иванов" required></p>
+                    </div>
+                    <div class="f_row">
+                        <p class="width"><label for="first">Имя:</label></p>
+                        <p><input id="first" type="text" placeholder="Иван" required></p>
+                    </div>
+                    <div class="f_row">
+                        <p class="width"><label for="middle">Отчество: </label></p>
+                        <p><input id="middle" type="text" placeholder="Иванович"></p>
+                    </div>
+                    <div class="f_row">
+                        <p class="width"><label for="company">Компания: </label></p>
+                        <p><input id="company" type="text" placeholder="ООО Питер-Строй" required></p>
+                    </div>
+                    <div class="row1">
+                        <p class="width">Статус:</p>
+                        <div class="status">
+                            <div class="row2 checked">
+                                <p><label>Новая:<input checked name="status[]" type="checkbox"></label></p>
+                                <p><label>Перепрограммирование:<input name="status[]" type="checkbox"></label></p>
+                            </div>
+                            <div class="row2 checked">
+                                <p><label>Гость:<input name="status[]" type="checkbox"></label></p>
+                                <p><label>Утеря:<input name="status[]" type="checkbox"></label></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f_row">
+                        <p class="width">Примечание:</p>
+                        <p><textarea rows="3" cols="30"></textarea></p>
+                    </div>
+                </div>
+                <div class="f_bottom">
+                    <input class="b_form" type="submit" value="Отправить">
+                    <a href="#block4"><input class="b_form2" type="button" value="Назад"></a>
+                    <!--<input class="b_form" type="button" value="Назад">-->
+                </div>
+            </form>
+            <!--Конец формы для заполнения на карту-->
+            <!--Управляющий-->
+                <div id="block5" class="block5">
+                    <div class="row">
+                        <a id="b5_znmr" class="uk" href="#">Заявка на монтажные работы</a>
+                        <a id="b5_per" class="uk" href="#">Переезд</a>
+                    </div>
+                    <div class="row">
+                        <a id="b5_another" class="uk" href="#">Другое</a>
+                        <a id="b5_another" class="uk" href="#">Другое</a>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <section class="po">Подрядные организации</section>
+    <section class="card_po"><!--Блок Подрядные организации-->
+        <div class="row">
+
+            <a class="uk" href="#">Вентиляция</a>
+            <a class="uk" href="#">Пожарная сигнализация</a>
+
+        </div>
+        <div class="row">
+
+            <a class="uk" href="#">Клининг</a>
+            <a class="uk" href="#">Структурированная кабельная сеть (СКС) и система СКУД</a>
+
+        </div>
     </section>
-    <aside id="vertical-menu">Меню + фильтры</aside>
-    <main>Основное поле</main>
-    <footer id="adr">
-        <address>Автор страницы</address>
-        <time>2019-03-23</time>
-    </footer>
+    <footer>Подвал</footer>
 </body>
 </html>

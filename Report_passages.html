@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Отчет по проходам</title>
+    <link rel="stylesheet" href="css/Report_passages.css">
+</head>
+
+<body>
+    <header>
+        <a id="Logo" href="index.html"><img src="images/logoyazilim.png" alt="Информационный портал"></a>
+        <div>
+            <a class="active" href="login.html">Вход в личный кабинет</a>
+            <a class="active" href="signup.html">Регистрация</a>
+        </div>
+    </header>
+    <div class="slider">Учет рабочего времени</div>
+    <!--<div class="filter1">Окно для вывода фильтров</div>-->
+    <!--Окно для вывода отчета-->
+    <div class="report_full">
+        <div class="filter">
+            <h3>Отчет</h3>
+            <div class="type">
+                <p class="type_1">Тип:</p>
+                <p class="name_report"><!--Упрощенны отчет-->
+                    <select name="select" size="1" required><!--multiple дает множественного выбора-disabled -->
+                        <option selected value="1">Упрощенны отчет</option><!--На сервер уходят знвчения из value-->
+                        <option disabled value="2">О сотруднике (подробно)</option>
+                        <option disabled value="3">Колличество опозданий</option>
+                    </select>
+                </p>
+            </div>
+            <div class="c_date">
+                <p class="c_block">C</p>
+                <input class="c_kalendar" type="date" min="2012-12-12" max="2020-12-12">
+            </div>
+            <div class="c_date">
+                <p class="c_block">По</p>
+                <input class="po_kalendar" type="date" min="2012-12-12" max="2020-12-12">
+            </div>
+            <h3>Сотрудники</h3>
+            <div class="firma">
+                <p class="n_firm">Фирма</p>
+                <p class="list_firm"><!--Упрощенны отчет-->
+                    <select name="select" size="1" required><!--multiple дает множественного выбора-disabled -->
+                        <option selected value="1">Альфа Усть-Луга</option><!--На сервер уходят знвчения из value-->
+                        <option value="2">Арс-Патент</option>
+                        <option value="3">Гамма</option>
+                        <option value="4">ЛайтХаус</option>
+                        <option value="5">Эмбрия</option>
+                        <option value="6">ЭПАМ</option>
+                    </select>
+                </p>
+            </div>
+            <div class="user">Окно для вывода списка сотрудников</div>
+            <div class="type">
+                <p class="type_1">Поиск по:</p>
+                <p class="name_report"><!--Упрощенны отчет-->
+                    <select name="select" size="1" required><!--multiple дает множественного выбора-disabled -->
+                        <option selected value="1">Фамилии</option><!--На сервер уходят знвчения из value-->
+                        <option disabled value="2">Табельному номеру</option>
+                    </select>
+                </p>
+            </div>
+            <input class="search" type="text" placeholder="Введите фамилию">
+            <div class="report_button">
+                <input type="button" value="Сформировать">
+            </div>
+        </div>
+        <div class="report">Окно для вывода отчета</div>
+    </div>
+    <footer>адреса компании</footer>
+</body>
+
+</html>
