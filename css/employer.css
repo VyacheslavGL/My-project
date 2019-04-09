@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     /*background: yellowgreen;*/
 }
@@ -92,44 +92,38 @@ header div a:hover{
 
 }
 
-/*Общий блок с арендаторами*/
-.lessee{
-    display: flex;
-    flex-direction: row;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    width: 100%;
-    height: 1000px;
-    background: honeydew;
-}
-
-.lessee_cont{
-    display: flex;
-    flex-direction: column;
-}
-
-.row1{
-    display: flex;
-    /*flex-wrap: wrap;*/
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    background: #f9f9f9;
-    margin-bottom: 10px;
-}
-.row2{
+/*Центральный блок*/
+.main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
-    background: darkgray;
+    height: 100vh;
+    background: snow;
+}
+.main-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    /*height: auto;*/
+    background: whitesmoke;
+}
+
+.lessee-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 55%;
+    background: whitesmoke;
 }
 
 /*Маленькие блоки с данными*/
+
 .lessee_in{
     display: flex;
     flex-direction: column;
@@ -137,6 +131,8 @@ header div a:hover{
     margin: 3px;
     /*width: 35%;*/
 }
+
+
 
 /*Company-Logo*/
 .Company-Logo{
@@ -303,5 +299,66 @@ div>p{
 
 /*конец Маленькие блоки с данными*/
 
+/*Подробное описание*/
+.opisanie{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 99%;
+    border: 1px solid black;
+}
 
-/*Конец Общий блок с арендаторами*/
+.name-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 99%;
+    height: 5%;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.opisanie-company{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 99%;
+    height: 99%;
+    margin: 5px;
+    border: 1px solid black;
+    font-size: 1.3em;
+}
+
+/*Подробное описание end*/
+
+/*Центральный блок end*/
+
+/*Подвал*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: whitesmoke;
+}
+
+
+.footer-call{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: gainsboro;
+}
+
+
+/*Подвал end*/
+
